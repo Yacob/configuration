@@ -1,0 +1,6 @@
+[user]
+	name = 
+	email = 
+[alias]
+	wog = log --graph --decorate --all --dense --pretty=format:\"%C(yellow)%h %Cred%ad %Cgreen%<(7)%aN%C(auto,magenta)%d %Creset%s\" --date=relative -30
+	cdiff = diff origin/master..HEAD
