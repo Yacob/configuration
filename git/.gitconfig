@@ -1,0 +1,12 @@
+[user]
+	name = j.nestor
+	email = 
+[alias]
+	review = push origin HEAD:refs/publish/master
+	draft = push origin HEAD:refs/drafts/master
+	wog = log --graph --decorate --all --dense --pretty=format:\"%C(yellow)%h %Cred%ad %Cgreen%<(7)%aN%C(auto,magenta)%d %Creset%s\" --date=relative -25
+	cdiff = diff origin/master..HEAD
+	dirty = diff --cached
+	crossrepo = !sh -c \"git push origin HEAD:refs/publish/master/crossrepo/$1\" -	
+[core]
+	ignorecase = false
